@@ -1,0 +1,293 @@
+
+
+.bg-color-feast{
+    background-color:#fbfbfb;
+
+}
+.girl-img1{
+    width: 500px;
+    height: 360px;
+    top: 15.1%;
+    left: 22%;
+    z-index: 99;
+}
+.row-feast{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: row-feast;
+    position: absolute;
+}
+.heading-fast{
+       color: #fc8a06;
+}
+.fs-8{
+    font-size: 11px;
+}
+
+.outline-remove{
+    outline: none;
+}
+.bg-feast-orange{
+    width: 460px; 
+    height: 425px;
+    z-index: -1;
+    
+}
+.girl-img2{
+    width: 250px;
+    height: 300px;
+    top: 125px;
+    right: 300px;
+    z-index: 1;
+}
+.card-text-c{
+    color: #fc8a06;
+}
+.personal{
+    color: #fc8a06;
+}
+.card-img-top-log{
+    width:60px;
+    height: 20px;
+
+}
+.order-position1{
+    top: 90px;
+    right: 120px;
+    z-index: 2;
+}
+.order-position2{
+    top: 200px;
+    right: 60px;
+    z-index: 2;
+}
+.order-position3{
+    bottom: 0px;
+    right: 120px;
+    z-index: 2;
+}
+.app-store{
+    align-content: center;
+}
+.partener-img{
+    background-image: url(img/Home.img/rider\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rider-img{
+    background-image: url(img/Home.img/rider\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.class-lower{
+    bottom: 190px;    
+}
+.sigi-business{
+    color: #fc8a06;
+}
+.class-question{
+    background-color: white;
+}
+.payment{
+    line-height: 10%;
+    color: black;
+    justify-content: center;
+}
+.requent-Question{
+   border: 1px solid #fc8a06;
+}
+.suscribe {
+    left: 600px;
+}
+/* page2 */
+.row-east{
+    background-image: url(img/menu/Group\ 23.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+.col-east{
+    margin-top: 100px;
+    padding-left: 40px;
+    
+}
+.time-east{
+    bottom: -20px;
+    left:62px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.img-discount{
+    background-image: url(img/menu/Rectangle\ 8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 350px;
+   
+}
+.img2-discount{
+    background-image: url(img/menu/Rectangle\ 8\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 350px;
+   
+}
+.img3-discount{
+    background-image: url(img/menu/Group\ 8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 350px;
+   
+}
+.discount-number{
+    right: 24px;
+    top: 8px;
+}
+
+
+.plus-logo{
+    bottom: 10px;
+    right: 10px;
+}
+.border-round{
+    right: 0px;
+    bottom: 0px;
+}
+.top-round{
+    width: 60px;
+    top: 0px;
+    right: 20px;
+}
+.east-text{
+    color: #fc8a06;
+    padding-top: 100px;
+}
+.frist-b{
+    padding-top: 90px;
+}
+.rate-east{
+    bottom: 60px;
+    right: 500px;
+}
+.plus-icon{
+    bottom: 20px;
+    right: 15px;
+}
+.plus-bakend{
+    bottom: 20px;
+    right: 10px;
+    width: 60px;
+}.Fries-color{
+    color: #fc8a06;
+}
+.map-img{
+    background-image: url(img/menu/Rectangle\ 52\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.south{
+    color: #fc8a06;
+}
+.img-reviews{
+    right: 600px;
+    width: 100px;
+    height: 100px;
+    
+}
+.log-web{
+    width: 200px;
+    height: 35px;
+}
+.search-icon{
+    padding-top: 13px;
+    padding-left: 20px;
+}
+.pizza-rate{
+    align-items: end;
+    
+}
+.price-pizzas{
+    background-color: #028643;
+}
+.special-offer{
+    background-image: url(img/resturant/Rectangle\ 8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 200px;
+    
+}
+.xx-img{
+    top: 31px;
+    left: 7px;
+}
+.text-coloring{
+    color: #028643;
+}
+.Checkout-btn{
+    background-color: #028643;
+}
+.input-wirth{
+    width: 40px;
+}
+.modal-bg-img {
+    background-image: url(img/offer/Rectangle\ 53.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+.cross-img{
+    width: 40px;
+    right: -12px;
+    top: -12px;
+}
+.input-order{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.btn-next-step{
+    background-color: #028643;
+}
+.carrot-card{
+    top: -30px;
+}
+.carrot-icon{
+    left: -7px;
+}
+.btn-close{
+    left: 1px;
+}
+.btn-close-deleviry{
+ left: auto;
+}
+.horizontal-line {
+    
+    border-top: 2px solid orange;
+    width: 40%;
+    margin: 15px 0;
+  }
+  .post-red{
+    color: red;
+  }
+  .post-green{
+    color: green;
+  }
+  .cross-imgp{
+    width: 40px;
+    right:-12px;
+    top: -12px;
+
+  }
+  /* .cross-img-log {
+    width: 40px;
+    top: 10px;
+    right: 5px;
+  } */
+  

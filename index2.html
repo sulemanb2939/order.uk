@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <section class="sec-navbar">
+      <nav class="navbar navbar-expand-lg ms-5 me-5">
+        <div class="container my-3  ">
+          <img src="img/Home.img/LOGO 1.png " class=" log-web" alt=" logo">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto gap-3">
+              <li class="nav-item">
+                <a class="nav-link "
+                  href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="index1.html">Browse Menu</a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn bg-transparent"
+                  data-bs-toggle="modal" data-bs-target="#spicaloffer2">
+                  Special Offers
+                </button>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  bg-warning rounded-pill text-white ps-4 pe-4" href="index2.html">Restaurants</a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn nav-link " data-bs-toggle="modal" data-bs-target="#trackorder2">
+                  Track Order
+                </button>
+              </li>
+            </ul>
+            <div class="bg-dark rounded-pill pe-3">
+              <button class="btn  bg-dark text-white rounded-pill" type="submit">
+                <img src="img/Home.img/Male User.png" alt="male">
+                <button type="button" class="border-0 bg-dark text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login">
+                  LOG IN
+                </button>
+  
+                <button type="button" class=" bg-dark border-0 text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#signup">
+                  SIGN UP
+                </button>
+  
+              </button>
+            </div>
+
+            <!-- Modal -->
+            <div>
+              <div class="modal fade" id="login" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5"
+                        id="exampleModalLabel">Account Login</h1>
+                        <img src="img/offer/Ellipse 1.png"
+                        class="cross-imgp  position-absolute " alt>
+                        <button type="button" class="btn-close fixed-top position-absolute"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control"
+                          id="floatingInput"
+                          placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control"
+                          id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                      <div
+                        class="col-12 col-md-12 col-lg-12 d-flex justify-content-between">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox"
+                            id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Remember me
+                          </label>
+                        </div>
+                        <div>
+                          <span>Forget <a href="#"> Password</a></span>
+                        </div>
+                      </div>
+                      <div
+                        class="col-12 col-md-12 col-lg-12 py-3 text-center">
+                        <button type="submit"
+                          class="btn btn-primary "> Log in</button>
+                        <button type="button" class="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#signup">
+                          Sign Up
+                        </button>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div>
+              <div class="modal fade" id="signup" data-bs-backdrop="static"
+                data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered ">
+                  <div class="modal-content">
+                    <div class="modal-header ">
+                      <h1 class="modal-title  fs-5 "
+                        id="staticBackdropLabel">Account Sign Up</h1>
+                        <img src="img/offer/Ellipse 1.png"
+                        class="cross-imgp  position-absolute " alt>
+                        <button type="button" class="btn-close fixed-top position-absolute"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4"
+                            class="form-label">Email</label>
+                          <input type="email" class="form-control"
+                            id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4"
+                            class="form-label">Password</label>
+                          <input type="password" class="form-control"
+                            id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress"
+                            class="form-label">Address</label>
+                          <input type="text" class="form-control"
+                            id="inputAddress"
+                            placeholder="Modal town C">
+                        </div>
+
+                        <div class="col-md-6">
+                          <label for="inputCity"
+                            class="form-label">City</label>
+                          <input type="text" class="form-control"
+                            id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState"
+                            class="form-label">State</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Punjab</option>
+                            <option>Sindh </option>
+                            <option> Balochistan </option>
+                            <option> </option>
+                            <option> </option>
+
+                          </select>
+                        </div>
+
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input"
+                              type="checkbox" id="gridCheck">
+                            <label class="form-check-label"
+                              for="gridCheck">
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12 text-center">
+                          <button type="submit"
+                            class="btn btn-primary">Sign in</button>
+                          <button type="button" class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#login">
+                            LOG IN
+                          </button>
+
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal end-->
+          </div>
+        </div>
+      </nav>
+    </section>
+    <div class="modal fade" id="trackorder2" tabindex="-1" aria-labelledby="trackorder2" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header position-relative">
+            <img src="img/offer/Ellipse 1.png" class="cross-imgp position-absolute "
+              alt>
+            <button type="button" class="btn-close fixed-top position-absolute"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <section class="sec-delevry">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-4 col-lg-4">
+                    <img src="img/offer/Rectangle 55.png" class="w-100 h-100 " alt>
+                  </div>
+                  <div class="col-12 col-md-8 col-lg-8">
+                    <div class=" pt-5">
+                      <h1>Please Enter Your</h1>
+                      <h1><u>Post Code</u></h1>
+                      <p>To start placing delivery order, please <br>enter your
+                        full postcode here</p>
+                      <div class="input-group mb-3x  ms-5">
+                        <input type="text" class="form-control  "
+                          placeholder="eg.1AA. BB1"
+                          aria-label="Recipient's username"
+                          aria-describedby="basic-addon2">
+                        <span
+                          class="input-group-text text-white  bg-warning px-5 border-0"
+                          id="basic-addon2"><b>Find</b></span>
+                      </div>
+                      <div class="d-flex mt-2  ms-5 justify-content-center">
+                        <div class="horizontal-line w-25 "></div>
+                        <div>
+                          <p class="mx-3">Or</p>
+                        </div>
+                        <div class="horizontal-line w-25 "></div>
+                      </div>
+                      <h6 class="text-center"><u>I Went to come and
+                          collect</u></h6>
+                      <img src="img/offer/Map Marker.png" class="w-25" alt>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header position-relative">
+            <img src="img/offer/Ellipse 1.png" class="cross-imgp position-absolute "
+              alt>
+            <button type="button" class="btn-close fixed-top position-absolute"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <section class="sec-delevry">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-4 col-lg-4">
+                    <img src="img/offer/Rectangle 55 (1).png" class="w-100 h-100 "
+                      alt>
+                  </div>
+                  <div class="col-12 col-md-8 col-lg-8">
+                    <div class=" pt-5">
+                      <h1>Please Enter Your</h1>
+                      <h1 class="post-red"><u>Post Code</u></h1>
+                      <p>To start placing delivery order, please <br>enter your
+                        full postcode here</p>
+                      <div class="input-group mb-3x  ms-5">
+                        <input type="text" class="form-control  "
+                          placeholder="EN4.9QF"
+                          aria-label="Recipient's username"
+                          aria-describedby="basic-addon2">
+                        <span
+                          class="input-group-text text-white  bg-dark px-5 border-0"
+                          id="basic-addon2"><b>Find</b></span>
+                      </div>
+                      <h5 class="post-red text-center py-3">Sorry, We don't
+                        Delivery to your Area.</h5>
+                      <div class="d-flex mt-2  ms-5 justify-content-center">
+                        <div class="horizontal-line w-25 "></div>
+                        <div>
+                          <p class="mx-3">Or</p>
+                        </div>
+                        <div class="horizontal-line w-25 "></div>
+                      </div>
+                      <h6 class="text-center"><u>I Went to come and
+                          collect</u></h6>
+                      <img src="img/offer/Map Marker.png" class="w-25" alt>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header position-relative">
+            <img src="img/offer/Ellipse 1.png" class="cross-imgp position-absolute "
+              alt>
+            <button type="button" class="btn-close fixed-top position-absolute"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <section class="sec-delevry">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-4 col-lg-4">
+                    <img src="img/offer/Rectangle 55 (2).png" class="w-100 h-100 "
+                      alt>
+                  </div>
+                  <div class="col-12 col-md-8 col-lg-8">
+                    <div class=" pt-5">
+                      <h1>Please Enter Your</h1>
+                      <h1><u class="post-green">Post Code</u> Submitted</h1>
+                      <p>To start placing delivery order, please <br>enter your
+                        full postcode here</p>
+                      <div class="input-group mb-3x  ms-5">
+                        <input type="text" class="form-control  "
+                          placeholder="ENG. 92F"
+                          aria-label="Recipient's username"
+                          aria-describedby="basic-addon2">
+                        <span
+                          class="input-group-text text-white  bg-dark px-5 border-0"
+                          id="basic-addon2"><b>Change</b></span>
+                      </div>
+                      <h5 class="post-green py-2 text-center">We delivery to
+                        your order</h5>
+                      <div class="d-flex mt-2  ms-5 justify-content-center">
+                        <div class="horizontal-line w-25 "></div>
+                        <div>
+                          <p class="mx-3">Or</p>
+                        </div>
+                        <div class="horizontal-line w-25 "></div>
+                      </div>
+                      <h6 class="text-center"><u>I Went to come and
+                          collect</u></h6>
+                      <img src="img/offer/Map Marker.png" class="w-25" alt>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="img/offer/Ellipse 1.png"
+              class="cross-imgp  position-absolute " alt>
+            <button type="button" class="btn-close fixed-top position-absolute"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body py-3 text-center">
+            <h1 class="text-center fs-1">Order Now</h1>
+            <p class="text-center">Minimum Delivery is $10</p>
+            <button class="rounded-pill bg-dark border-0 py-2 ps-3 mt-4 pe-5">
+
+              <div class="d-flex">
+                <div>
+                  <img src="img/offer/Delivery Scooter.png" class="w-50" alt>
+                </div>
+                <div>
+                  <h6 class="text-white py-1">Deliver My Order</h6>
+                </div>
+              </div>
+            </button>
+            <button
+              class="rounded-pill mt-4 bg-warning border-0 py-2 ps-1 pe-4">
+
+              <div class="d-flex">
+                <div>
+                  <img src="img/offer/New Store.png" class="w-50" alt>
+                </div>
+                <div>
+                  <h6 class="text-dark py-1 ">I will Come & collect</h6>
+                </div>
+              </div>
+            </button>
+            <div class="d-flex justify-content-center gap-2 mt-4">
+              <div class="horizontal-line w-25"></div>
+              <div>
+                <h4>Or</h4>
+              </div>
+              <div class="horizontal-line w-25"></div>
+            </div>
+            <u class="text-center fs-5">Cancle & go back</u>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="spicaloffer2" tabindex="-1"
+      aria-labelledby="spicaloffer2" aria-hidden="true">
+      <div class="modal-dialog  modal-lg">
+        <div class="modal-content">
+          <div class="modal-header modal-bg-img position-relative">
+            <img src="img/offer/Ellipse 1.png" class="cross-img position-absolute "
+              alt>
+            <button type="button" class="btn-close fixed-top position-absolute"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <section class="sec-special">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-12 col-lg-12">
+                    <nav
+                      style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                      aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item text-decoration"><a
+                            href="#"><b>Special offers</b></a></li>
+                        <li class="breadcrumb-item active"
+                          aria-current="page"><b>Meal Deal1</b></li>
+                      </ol>
+                    </nav>
+                    <h5 class="ms-5">Please Select Your First Pizza</h5>
+                    <div class="card bg-color-feast mt">
+                      <div class="main-div d-flex justify-space-between">
+                        <div class="sub-div1 d-flex">
+                          <img src="offer/Ellipse 6.png" class=" w-25 mx-3 py-1"
+                            alt>
+                          <div class>
+                            <h6
+                              class="my-4 border-start ps-3 border-3 py-2 ">Margerita</h6>
+                          </div>
+                        </div>
+                        <div class="sub-div2 d-flex gap-3 ms-auto py-4 ">
+                          <div class="order-container ">
+                            <button class="decrement border-0 bg-transparent"
+                              onclick="decrementOrder1()"><i
+                                class="fa-solid fa-circle-minus "></i></button>
+                            <input type="number" class="input-order"
+                              id="orderCount1" value="0" min="0" readonly>
+                            <button class="increment border-0 bg-transparent "
+                              onclick="incrementOrder1()"><i
+                                class="fa-solid fa-circle-plus me-5"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-color-feast mt-3">
+                      <div class="main-div d-flex justify-space-between">
+                        <div class="sub-div1 d-flex">
+                          <img src="img/offer/Ellipse 6 (5).png"
+                            class="w-25 mx-3 py-1"
+                            alt>
+                          <div class>
+                            <h6
+                              class="my-4 border-start ps-3 border-3 py-2 ">Polo</h6>
+                          </div>
+                        </div>
+                        <div class="sub-div2 d-flex gap-3 ms-auto py-4 ">
+                          <div class="order-container ">
+                            <button class="decrement border-0 bg-transparent"
+                              onclick="decrementOrder2()"><i
+                                class="fa-solid fa-circle-minus "></i></button>
+                            <input type="number" class="input-order"
+                              id="orderCount3" value="0" min="0" readonly>
+                            <button class="increment border-0 bg-transparent "
+                              onclick="incrementOrder2()"><i
+                                class="fa-solid fa-circle-plus me-5"></i></button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="card bg-color-feast mt-3">
+                      <div class="main-div d-flex justify-space-between">
+                        <div class="sub-div1 d-flex">
+                          <img src="img/offer/Ellipse 6 (4).png"
+                            class="w-25 mx-3 py-1"
+                            alt>
+                          <div class>
+                            <h6
+                              class="my-4 border-start ps-3 border-3 py-2 ">Meat
+                              Fiest</h6>
+                          </div>
+                        </div>
+                        <div class="sub-div2 d-flex gap-3 ms-auto py-4 ">
+                          <div class="order-container">
+                            <button
+                              class="decrement border-0 bg-transparent decrement"><i
+                                class="fa-solid fa-circle-minus "></i></button>
+                            <input type="number" class="input-order counter"
+                              id="orderCount" value="0" min="0" readonly>
+                            <button
+                              class="increment border-0 bg-transparent increment"><i
+                                class="fa-solid fa-circle-plus me-5"></i></button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="card bg-dark mt-3">
+                      <div class="main-div d-flex justify-space-between">
+                        <div class="sub-div1 d-flex">
+                          <img src="img/offer/Ellipse 6 (3).png"
+                            class="w-25 mx-3 py-1"
+                            alt>
+                          <div class>
+                            <h6
+                              class="my-4 border-start text-warning ps-3 border-3 py-2 ">Hawaiian</h6>
+                          </div>
+                        </div>
+                        <div class="sub-div2 d-flex gap-3 ms-auto py-4 ">
+                          <div class="order-container">
+                            <button
+                              class="decrement border-0 bg-transparent decrement"><i
+                                class="fa-solid text-white fa-circle-minus "></i></button>
+                            <input type="number" class="input-order counter"
+                              id="orderCount" value="0" min="0" readonly>
+                            <button
+                              class="increment border-0 bg-transparent increment"><i
+                                class="fa-solid text-white fa-circle-plus me-5"></i></button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="card bg-color-feast mt-3">
+                      <div class="main-div d-flex justify-space-between">
+                        <div class="sub-div1 d-flex">
+                          <img src="img/offer/Ellipse 6 (2).png"
+                            class="w-25 mx-3 py-1"
+                            alt>
+                          <div class>
+                            <h6
+                              class="my-4 border-start ps-3 border-3 py-2 ">Tosacana</h6>
+                          </div>
+                        </div>
+                        <div class="sub-div2 d-flex gap-3 ms-auto py-4 ">
+                          <div class="order-container">
+                            <button
+                              class="decrement border-0 bg-transparent decrement"><i
+                                class="fa-solid fa-circle-minus "></i></button>
+                            <input type="number" class="input-order counter"
+                              id="orderCount" value="0" min="0" readonly>
+                            <button
+                              class="increment border-0 bg-transparent increment"><i
+                                class="fa-solid fa-circle-plus me-5"></i></button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="card bg-color-feast mt-3">
+                      <div class="main-div d-flex justify-space-between">
+                        <div class="sub-div1 d-flex">
+                          <img src="img/offer/Ellipse 6 (1).png"
+                            class="w-25 mx-3 py-1"
+                            alt>
+                          <div class>
+                            <h6
+                              class="my-4 border-start ps-3 border-3 py-2 ">Tosacana</h6>
+                          </div>
+                        </div>
+                        <div class="sub-div2 d-flex gap-3 ms-auto py-4 ">
+                          <div class="order-container">
+                            <button
+                              class="decrement border-0 bg-transparent decrement"><i
+                                class="fa-solid fa-circle-minus "></i></button>
+                            <input type="number" class="input-order counter"
+                              id="orderCount" value="0" min="0" readonly>
+                            <button
+                              class="increment border-0 bg-transparent increment"><i
+                                class="fa-solid fa-circle-plus me-5"></i></button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="card my-4  border-0 ">
+                    <div class="d-flex  ">
+                      <div class>
+                        <button type="button"
+                          class="px-4 py-1  text-white bg-warning rounded-3 border-0">
+                          Total to Pay <span
+                            class="fs-3">$127.90</span></button>
+                      </div>
+                      <div class=" ms-auto">
+                        <h6 class="py-3">Delidery & Tax will be caculated in
+                          next step</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <button type="button" class="btn "
+                      data-bs-dismiss="modal"><u>Take me back</u></button>
+                    <button type="button"
+                      class="btn-next-step text-white rounded-3 border-0"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal"><img
+                        src="img/Home.img/Forward Button.png" class="me-4" alt>
+                      <b>Next Step</b>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header modal-bg-img position-relative">
+          <img src="img/offer/Ellipse 1.png" class="cross-img position-absolute "
+            alt>
+          <button type="button" class="btn-close fixed-top position-absolute"
+            data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <section class="sec-special">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                  <nav
+                    style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb my-4">
+                      <li class="breadcrumb-item text-decoration"><a
+                          href="#"><b>Special offers</b></a></li>
+                      <li class="breadcrumb-item active"
+                        aria-current="page"><b>Meal Deal 1</b></li>
+                      <li class="breadcrumb-item active"
+                        aria-current="page"><b>Customize Pizza 1</b></li>
+                    </ol>
+                  </nav>
+                  <div class="d-flex">
+                    <div>
+                      <h5 class="ms-5">Customize your Chicken Pizza</h5>
+                    </div>
+                    <div class="ms-auto">
+                      <h3>4/4 Selected</h3>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center  border-0">
+                    <div class>
+                      <img src="img/offer/Ellipse 6.png" alt>
+                    </div>
+                    <div class=" text-warning ms-3 ps-3 py-2 border-start">
+                      <h2>Please Select Up to 4 options Free!</h2>
+                    </div>
+                  </div>
+                  <section class="sec-vegitable position-relative mt-5 ">
+                    <div class="container border rounded-3">
+                      <div
+                        class=" carrot-card d-flex w-50  align-items-center rounded-3 position-absolute">
+                        <div
+                          class="carrot-icon bg-warning position-absolute  py-3 px-3 rounded-pill">
+                          <i class="fa-solid  fa-carrot fa-2x"></i>
+                        </div>
+                        <div class="bg-dark px-5 py-2  rounded-3">
+                          <h5 class="text-white ps-4">Vegitable Toppings</h5>
+                        </div>
+                      </div>
+                      <div class="row py-4">
+                        <div class="col-12 col-md-4 col-lg-4 ">
+                          <div class="form-check py-2  ">
+                            <input class="form-check-input" type="checkbox"
+                              value id="Cheese">
+                            <label class="form-check-label" for="Cheese">
+                              <b>Cheese</b>
+                            </label>
+                          </div>
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="Mushrooms">
+                            <label class="form-check-label" for="Mushrooms">
+                              <b>Mushrooms</b>
+                            </label>
+                          </div>
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="Olives">
+                            <label class="form-check-label" for="Olives">
+                              <b>Olives</b>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 ">
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="greenpeppers">
+                            <label class="form-check-label" for="greenpeppers">
+                              <b>Green Peppers</b>
+                            </label>
+                          </div>
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="sweatcorns">
+                            <label class="form-check-label" for="sweatcorns">
+                              <b>Sweatcorns</b>
+                            </label>
+                          </div>
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b>Pineapples</b>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 ">
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b>Tomato</b>
+                            </label>
+                          </div>
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b> Jalapeneos</b>
+                            </label>
+                          </div>
+                          <div class="form-check py-2 ">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b>onions</b>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+                  <section class="sec-meat position-relative mt-5 ">
+                    <div class="container border rounded-3">
+                      <div
+                        class=" carrot-card d-flex w-50  align-items-center rounded-3 position-absolute">
+                        <div
+                          class="carrot-icon bg-warning position-absolute  py-3 px-3 rounded-pill">
+                          <i class="fa-solid fa-2x fa-drumstick-bite"></i>
+                        </div>
+                        <div class="bg-dark px-5 py-2  rounded-3">
+                          <h5 class="text-white ps-4">Meat Toppings</h5>
+                        </div>
+                      </div>
+                      <div class="row py-4">
+                        <div class="col-12 col-md-4 col-lg-4 ">
+                          <div class="form-check py-2  ">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b>Cheese</b>
+                            </label>
+                          </div>
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b>Mushrooms</b>
+                            </label>
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 ">
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b>Green Peppers</b>
+                            </label>
+                          </div>
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b>Sweatcorns</b>
+                            </label>
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 ">
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b>Tomato</b>
+                            </label>
+                          </div>
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b> Jalapeneos</b>
+                            </label>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+                  <section class="sec-vegitable position-relative mt-5 ">
+                    <div class="container border rounded-3">
+                      <div
+                        class=" carrot-card d-flex w-50  align-items-center rounded-3 position-absolute">
+                        <div
+                          class="carrot-icon bg-warning position-absolute  py-3 px-3 rounded-pill">
+                          <i class="fa-solid  fa-fish fa-2x"></i>
+                        </div>
+                        <div class="bg-dark px-5 py-2  rounded-3">
+                          <h5 class="text-white ps-4">SeaFood Toppings</h5>
+                        </div>
+                      </div>
+                      <div class="row py-4">
+                        <div class="col-12 col-md-4 col-lg-4 ">
+                          <div class="form-check py-2  ">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b>Cheese</b>
+                            </label>
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 ">
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b>Green Peppers</b>
+                            </label>
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 ">
+                          <div class="form-check py-2">
+                            <input class="form-check-input" type="checkbox"
+                              value id="flexCheckIndeterminate">
+                            <label class="form-check-label"
+                              for="flexCheckIndeterminate">
+                              <b>Tomato</b>
+                            </label>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+
+                  <div class="card my-4  border-0 ">
+                    <div class="d-flex  ">
+                      <div class>
+                        <button type="button"
+                          class="px-4 py-1  text-white bg-warning rounded-3 border-0">
+                          Total to Pay <span
+                            class="fs-3">$127.90</span></button>
+                      </div>
+                      <div class=" ms-auto">
+                        <h6 class="py-3">Delidery & Tax will be caculated in
+                          next step</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <button type="button" class="btn "
+                      data-bs-dismiss="modal"><u>Take me back</u></button>
+                    <button type="button"
+                      class="btn-next-step text-white border-0 rounded-3"
+                      data-bs-toggle="modal" data-bs-target="#Instructions"><img
+                        src="img/Home.img/Forward Button.png" class="me-4"
+                        alt><b>Next Step</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="Instructions" tabindex="-1"
+      aria-labelledby="Instructions" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header modal-bg-img position-relative">
+            <img src="img/offer/Ellipse 1.png" class="cross-img position-absolute "
+              alt>
+            <button type="button" class="btn-close fixed-top position-absolute"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <section class="sec-special">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-12 col-lg-12">
+                    <nav
+                      style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                      aria-label="breadcrumb">
+                      <ol class="breadcrumb my-4">
+                        <li class="breadcrumb-item text-decoration"><a
+                            href="#"><b>Special offers</b></a></li>
+                        <li class="breadcrumb-item active"
+                          aria-current="page"><b>Meal Deal 1</b></li>
+                        <li class="breadcrumb-item active"
+                          aria-current="page"><b>Customize Pizza 1</b></li>
+                        <li class="breadcrumb-item active"
+                          aria-current="page"><b> Instructions</b></li>
+                      </ol>
+                    </nav>
+                    <div class>
+                      <h5 class="ms-5">Customize your Chicken Pizza</h5>
+                    </div>
+                    <div class="d-flex align-items-center  border-0">
+                      <div class>
+                        <img src="img/offer/Ellipse 6.png" alt>
+                      </div>
+                      <div class=" text-warning ms-3 ps-3 py-2 border-start">
+                        <h2>Please Select Up to 4 options Free!</h2>
+                      </div>
+                    </div>
+                    <section>
+                      <textarea
+                        class="w-100 h-100 px-4 py-5 bg-color-feast rounded-3"
+                        name="textarea"
+                        id="textarea">Write your Special Instructions here...</textarea>
+                    </section>
+
+                    <div class="card my-4  border-0 ">
+                      <div class="d-flex  ">
+                        <div class>
+                          <button type="button"
+                            class="px-4 py-1  text-white bg-warning rounded-3 border-0">
+                            Total to Pay <span
+                              class="fs-3">$127.90</span></button>
+                        </div>
+                        <div class=" ms-auto">
+                          <h6 class="py-3">Delidery & Tax will be caculated in
+                            next step</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-end">
+                      <button type="button" class="btn bold"
+                        data-bs-dismiss="modal"><u>Take me Back</u></button>
+                      <button type="button"
+                        class="btn-next-step  text-white border-0 rounded-3">
+                        <img src="img/offer/Forward Button.png" class="me-4"
+                          alt> <b>Submitte</b></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <section class="sec-east position-relative">
+      <div class="container pt-3">
+        <div class="row  row-east">
+          <div class="col-12 col-md-6 col-lg-6 col-east pt-5 ">
+            <p>I'm lovin it!</p>
+            <h1>Mcdonald's East London</h1>
+            <div>
+              <button type="button"
+                class="bg-dark border-0 px-3 py-2 text-white rounded-pill text-white">
+                <img src="img/resturant/Order Completed.png" alt>Minimum
+                order
+                :12GBM</button>
+              <button type="button"
+                class="bg-dark border-0 px-3 py-2 text-white rounded-pill text-white">
+                <img src="img/resturant/Motocross.png" alt> Delivery in
+                20-25
+                Minutes</button>
+            </div>
+            <button type="button"
+              class="bg-warning border-0 rounded-right-4 text-white px-5 py-2 border position-absolute time-east ">
+              <img src="img/resturant/Clock.png" alt="Clock"> Open Until
+              :3PM</button>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <img src="img/resturant/Rectangle 44.png"
+              class="w-100 py-5 px-5"
+              alt="buger">
+            <img src="img/menu/Rectangle 64.png"
+              class="position-absolute rate-east" alt="zinger">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-search-mune">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-12 col-md-8 col-lg-8">
+            <h3>Order from Thandoori Pizza London</h3>
+          </div>
+          <div class="col-12 col-md-4  col-lg-4 text-end">
+            <div class="d-flex position-relative">
+              <i
+                class="fa-solid fa-magnifying-glass position-absolute search-icon"></i>
+              <input type="text" name id=" search"
+                class=" border px-5 rounded-pill px-4 py-2"
+                placeholder=" Search from mune...">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3 col-lg-3">
+            <div class="d-flex text-start rounded-4">
+              <div
+                class="nav flex-column nav-pills  border rounded-3 lh-lg pb-5  bg-color-feast w-100  me-3"
+                id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div
+                  class="d-flex px-4 gap-3 bg-color-feast w-100 border py-3 rounded-5">
+                  <div>
+                    <img src="img/resturant/Restaurant Menu.png" alt>
+                  </div>
+                  <div>
+                    <h4 class="pt-2">Menu</h4>
+                  </div>
+                </div>
+                <button class="nav-link  active  text-start text-dark  w-100"
+                  id="v-pills-home-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-home" type="button" role="tab"
+                  aria-controls="v-pills-home"
+                  aria-selected="true">Pizzas</button>
+                <button class="nav-link  text-start text-dark"
+                  id="v-pills-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile" type="button" role="tab"
+                  aria-controls="v-pills-profile" aria-selected="false">Garlic
+                  Bread</button>
+                <button class="nav-link  text-start text-dark"
+                  id="v-pills-messages-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages" type="button" role="tab"
+                  aria-controls="v-pills-messages"
+                  aria-selected="false">Calzone</button>
+                <button class="nav-link  text-start text-dark"
+                  id="v-pills-settings-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings" type="button" role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false">Kababas</button>
+                <button class="nav-link  text-start text-dark"
+                  id="v-pills-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile" type="button" role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false">Salads</button>
+                <button class="nav-link  text-start text-dark"
+                  id="v-pills-messages-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages" type="button" role="tab"
+                  aria-controls="v-pills-messages" aria-selected="false">Cold
+                  Drinks</button>
+                <button class="nav-link  text-start text-dark"
+                  id="v-pills-settings-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings" type="button" role="tab"
+                  aria-controls="v-pills-settings" aria-selected="false">Happy
+                  Meal</button>
+                <button class="nav-link  text-start text-dark"
+                  id="v-pills-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile" type="button" role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false">Desserts</button>
+                <button class="nav-link  text-start text-dark"
+                  id="v-pills-messages-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages" type="button" role="tab"
+                  aria-controls="v-pills-messages" aria-selected="false ">Hot
+                  Drinks</button>
+                <button class="nav-link  text-start text-dark"
+                  id="v-pills-settings-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings" type="button" role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false">Suaces</button>
+                <button class="nav-link  text-start text-dark"
+                  id="v-pills-settings-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings" type="button" role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false">Orbit</button>
+              </div>
+              <div class="tab-content " id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home"
+                  role="tabpanel" aria-labelledby="v-pills-home-tab"
+                  tabindex="0"></div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab" tabindex="0"></div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                  aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                  aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                  aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                  aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                  aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                  aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                  aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3">
+              <div
+                class="d-flex mt-5 flex-column shadow-lg special-offer position-relative rounded-4">
+                <h6 class="south  align-items-end px-4 mt-auto">Mcdonlad's East
+                  London</h6>
+                <h4 class="text-white d-flex align-items-end   ps-4  ">First
+                  Order
+                  Discounts</h4>
+                <img src="img/resturant/Rectangle 47.png"
+                  class="border-round position-absolute" alt>
+                <img src="img/resturant/Rectangle 10 (2).png"
+                  class="top-round position-absolute " alt>
+                  <h4 class=" discount-number position-absolute text-white">20%</h4>
+                <i
+                  class="fa-solid fa-circle-plus fa-3x plus-logo position-absolute "></i>
+              </div>
+            </div>
+          </div>
+
+          <div class=" col-12 col-md-6 col-lg-6 m">
+            <div class="d-flex mb-3 ">
+              <div>
+                <h4>Pizaa</h4>
+              </div>
+              <div class="ms-auto ">
+                <button type="menu" class="  py-2 ps-5 rounded-pill border "> Sort By Pricing <img src="img/resturant/Forward Button.png" class="ms-5" alt=""></button>
+              </div>
+            </div>
+            <div
+              class="card border pt-2 px-1 mb-4 gap-2 bg-color-feast rounded-5 shadow-sm">
+              <div class="d-flex gap-5">
+                <div>
+                  <h4 class="">Farm House Extreme Pizza</h4>
+                  <img src="img/resturant/Group 60 (1).png" alt>
+                  <p class="lh-sm">1 Mcchicken,1 Big Mac, 1 Royal</p>
+                  <p class="lh-sm">CheeseBurger,3Medium Size French Fires</p>
+                  <p class="lh-sm">3 cold drinks</p>
+                </div>
+                <div>
+                  <img src="img/resturant/Rectangle 46 (3).png"
+                    class="w-75 gap-5  text-end text-end" alt>
+                </div>
+              </div>
+              <div class="main-div  gap-1 d-flex">
+                <div
+                  class="sub-div d-flex bg-dark border gap-2 px-2 pt-2 rounded-3">
+                  <div>
+                    <h4 class=" text-white">Small</h4>
+                  </div>
+                  <div>
+                    <h4
+                      class="price-pizzas  rounded-3 text-white px-1">$21.09</h4>
+                  </div>
+                </div>
+                <div class="sub-div px-1 pt-2 d-flex border rounded-3">
+                  <div>
+                    <h4 class>Medium</h4>
+                  </div>
+                  <div>
+                    <h4
+                      class="price-pizzas  text-white rounded-3 px-1">$25.90</h4>
+                  </div>
+                </div>
+                <div class="sub-div pt-2 px-1 d-flex gap-3 border rounded-3">
+                  <div>
+                    <h4 class>Large</h4>
+                  </div>
+                  <div>
+                    <h4
+                      class="price-pizzas  rounded-3 text-white px-1">$27.90</h4>
+                  </div>
+                </div>
+
+              </div>
+              <div
+                class="sub-div d-flex gap-2 px-1  border rounded-3 my-1 w-50 rounded-5">
+                <div>
+                  <h5 class=" m-0 pt-2 ">XL Large With Suces</h5>
+                </div>
+                <div>
+                  <h5
+                    class="mt-2 price-pizzas  rounded-3 text-white ">$32.90</h5>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card border pt-2 mb-4 px-1 bg-color-feast rounded-5 shadow-sm">
+              <div class="d-flex gap-5">
+                <div>
+                  <h4 class="">Dexule Pizza</h4>
+                  <img src="img/resturant/Group 60 (2).png" alt>
+                  <p class="lh-sm">1 Mcchicken,1 Big Mac, 1 Royal</p>
+                  <p class="lh-sm">CheeseBurger,3Medium Size French Fires</p>
+                  <p class="lh-sm">3 cold drinks</p>
+                </div>
+                <div>
+                  <img src="img/resturant/Rectangle 46 (4).png"
+                    class="w-75 gap-5 p  text-end text-end" alt>
+                </div>
+              </div>
+              <div class="main-div  gap-1 d-flex">
+                <div
+                  class="sub-div d-flex bg-dark border gap-2 px-2 pt-2 rounded-3">
+                  <div>
+                    <h4 class=" text-white">Small</h4>
+                  </div>
+                  <div>
+                    <h4
+                      class="price-pizzas  rounded-3 text-white px-1">$21.09</h4>
+                  </div>
+                </div>
+                <div class="sub-div px-1 pt-2 d-flex border rounded-3">
+                  <div>
+                    <h4 class>Medium</h4>
+                  </div>
+                  <div>
+                    <h4
+                      class="price-pizzas  text-white rounded-3 px-1">$25.90</h4>
+                  </div>
+                </div>
+                <div class="sub-div pt-2 px-1 d-flex gap-3 border rounded-3">
+                  <div>
+                    <h4 class>Large</h4>
+                  </div>
+                  <div>
+                    <h4
+                      class="price-pizzas  rounded-3 text-white px-1">$27.90</h4>
+                  </div>
+                </div>
+
+              </div>
+              <div
+                class="sub-div d-flex gap-2 px-1  border rounded-3 my-1 w-50 rounded-5">
+                <div>
+                  <h5 class=" pt-2 ">XL Large With Suces</h5>
+                </div>
+                <div>
+                  <h5
+                    class="mt-2 price-pizzas  rounded-3 text-white ">$32.90</h5>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card border pt-2 px-1 bg-color-feast rounded-5 shadow-sm">
+              <div class="d-flex gap-5">
+                <div>
+                  <h4 class="">Tandoori Pizza</h4>
+                  <img src="img/resturant/Group 60 (3).png" alt>
+                  <p class="lh-sm">1 Mcchicken,1 Big Mac, 1 Royal</p>
+                  <p class="lh-sm">CheeseBurger,3Medium Size French Fires</p>
+                  <p class="lh-sm">3 cold drinks</p>
+                </div>
+                <div>
+                  <img src="img/resturant/Rectangle 46 (5).png"
+                    class="w-75 gap-5  text-end text-end" alt>
+                </div>
+              </div>
+              <div class="main-div  gap-1 d-flex">
+                <div
+                  class="sub-div d-flex bg-dark border gap-2 px-2 pt-2 rounded-3">
+                  <div>
+                    <h4 class=" text-white">Small</h4>
+                  </div>
+                  <div>
+                    <h4
+                      class=" price-pizzas  rounded-3 text-white px-1">$21.09</h4>
+                  </div>
+                </div>
+                <div class="sub-div px-1 pt-2 d-flex border rounded-3">
+                  <div>
+                    <h4 class>Medium</h4>
+                  </div>
+                  <div>
+                    <h4
+                      class=" price-pizzas  text-white rounded-3 px-1">$25.90</h4>
+                  </div>
+                </div>
+                <div class="sub-div pt-2 px-1 d-flex gap-3 border rounded-3">
+                  <div>
+                    <h4 class>Large</h4>
+                  </div>
+                  <div>
+                    <h4
+                      class=" price-pizzas   rounded-3 text-white px-1">$27.90</h4>
+                  </div>
+                </div>
+
+              </div>
+              <div
+                class="sub-div d-flex gap-2 px-1  border rounded-3 my-1 w-50 rounded-5">
+                <div>
+                  <h5 class=" pt-2 ">XL Large With Suces</h5>
+                </div>
+                <div>
+                  <h5
+                    class="mt-2 price-pizzas rounded-3 text-white ">$32.90</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-lg-3 ">
+            <div class=" mb-3 d-flex bg-warning px-3 gag-0 py-3 rounded-3">
+              <div>
+                <img src="img/resturant/Clock.png" class="w-75" alt>
+              </div>
+              <div>
+                <h6 class="text-white pt-2">Open Until 3:00 AM</h6>
+              </div>
+            </div>
+            <div class=" price-pizzas  d-flex  px-4 gag-0 py-2 ">
+              <div>
+                <img src="img/resturant/Full Shopping Basket.png" class="w-75" alt>
+              </div>
+              <div>
+                <h4 class="text-white pt-2">My Basket</h4>
+              </div>
+            </div>
+            <div class="   d-flex  px-1 border position-relative  ">
+              <div>
+                <img src="img/resturant/Ellipse 5.png" class="w-100 py-4" alt>
+                <img src="img/resturant/1x.png" class=" position-absolute xx-img" alt="">
+              </div>
+              <div>
+                <h5 class=" m-0 text-coloring">$27.90</h5>
+                <h5 class="m-0">12" Vegitrain Pizzas</h5>
+                <p class="m-0">No Mushroom + Ggreen peppers</p>
+              </div>
+              <div>
+                <img src="img/resturant/Remove.png" class="py-4" alt="">
+              </div>
+            </div>
+            <div class="   d-flex  px-1 border position-relative  ">
+              <div>
+                <img src="img/resturant/Ellipse 5.png" class="w-100 py-4" alt>
+                <img src="img/resturant/1x.png" class=" position-absolute xx-img" alt="">
+              </div>
+              <div>
+                <h5 class=" m-0 text-coloring">$17.90</h5>
+                <h5 class="m-0">17" Tandoori Pizzas</h5>
+                <p class="m-0">No Mushroom + Ggreen peppers</p>
+              </div>
+              <div>
+                <img src="img/resturant/Remove (2).png" class="py-4" alt="">
+              </div>
+            </div>
+            <div class="   d-flex  px-1 border position-relative  ">
+              <div>
+                <img src="img/resturant/Ellipse 5.png" class="w-75 py-4" alt>
+                <img src="img/resturant/2x.png" class=" position-absolute xx-img" alt="">
+              </div>
+              <div>
+                <h5 class="  text-coloring">$4.90</h5>
+                <h5 class="">Coke Coca Cola</h5>
+                
+              </div>
+              <div>
+                <img src="img/resturant/delet.png" class="py-4 ps-4" alt="">
+              </div>
+            </div>
+            <div class="   d-flex  px-1 border position-relative  ">
+              <div>
+                <img src="img/resturant/Ellipse 5.png" class="w-100 py-4" alt>
+                <img src="img/resturant/1x.png" class=" position-absolute xx-img" alt="">
+              </div>
+              <div>
+                <h5 class=" m-0 text-coloring">$17.90</h5>
+                <h5 class="m-0">17" Tandoori Pizzas</h5>
+                <p class="m-0">No Mushroom + Ggreen peppers</p>
+              </div>
+              <div>
+                <img src="img/resturant/Remove (1).png" class="py-4" alt="">
+              </div>
+            </div>
+            <div class="   px-1 border   ">
+              <div class="d-flex gap-5 px-3">
+                <div>
+                 <h5>Sub Total :</h5>
+                </div>
+                <div>
+                <h5> $127.90</h5>
+                </div>
+              </div>
+              <div class="d-flex gap-5 px-3">
+                <div>
+                 <h5>Discount:</h5>
+                </div>
+                <div>
+                <h5 class="gap-5"> -3.00</h5>
+                </div>
+              </div>
+              <div class="d-flex  px-3">
+                <div>
+                 <h5>Delivery Fee :</h5>
+                </div>
+                <div>
+                <h5 class="ps-3"> 2.50</h5>
+                </div>
+              </div>
+            </div>
+            <div class="   px-1 border   ">
+               <div class=" bg-warning mx-2 my-2 rounded-3">
+                <div class=" d-flex gap-3 text-white px-2 py-2">
+                  <div>
+                    <h5 class="pt-1">Total To Pay:</h5>
+                  </div>
+                  <div>
+                    <h4>$127.90</h4>
+                  </div>
+                </div>
+               </div>
+               <button type="menu" class="border rounded-pill ps-3 py-1 w-100">Choose Your free item <img src="img/resturant/Forward Button.png" class="ps-4" alt=""></button>
+               <button type="menu" class="border rounded-pill ps-3 py-1 w-100 my-2">Choose Your free item <img src="img/resturant/Forward Button (1).png" class="ps-4" alt=""></button>
+            </div>
+            <div class="   px-1 border   ">
+              <div class="d-flex px-2 py-2">
+                <div class="border rounded-3 text-start px-1 py-2">
+                  <img src="img/resturant/Delivery Scooter.png" class="ps-4" alt="">
+                  <h5 class="m-0 text-center">Delivery</h5>
+                  <p class="m-0">Start At 17:50</p>
+                </div>
+                <div class="text-start ps-4 py-2">
+                  <img src="img/resturant/New Store.png" class="ps-4" alt="">
+                  <h5 class="m-0 text-center">Collection</h5>
+                  <p class="m-0"> Start At 16.50</p>
+                </div>
+              </div>
+              <button type="menu" class=" Checkout-btn border-0 fs-4 rounded-3 ps-3 py-2 w-100 my-2 text-white"> <img src="img/page3/Forward Button (2).png" class="pe-5 " alt=""> Checkout! </button>
+           </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="sec-opreation">
+      <div class="container shadow-lg bg-color-feast rounded-4 my-5 ">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4 py-5 px-4">
+            <div class="d-flex">
+              <div><img src="img/resturant/Tracking.png" alt>
+              </div>
+              <div>
+                <h3>Delivery Information</h3>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Monday:</h5>
+              </div>
+              <div>
+                <p>12:00 AM-3:00 AM, 8:00 AM-3:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Tuseday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-3:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>wednesday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-3:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Thursday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-3:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Friday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-3:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Satarday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-3:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Sunday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-12:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Estimate time Until Delerivy:</h5>
+              </div>
+              <div>
+                <p>20min</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 py-5 px-4">
+            <div class="d-flex">
+              <div>
+                <img src="img/resturant/ID Verified.png" alt>
+              </div>
+              <div>
+                <h3>Contract Information</h3>
+              </div>
+            </div>
+            <p class="lh-lg ">If you have allergies or some other dierty
+              restrictions, pleas contract the restuarant.The resturant will
+              provide you food-specific information upon request.</p>
+            <h6 class="lh-lg">Phone Number</h6>
+            <p class="lh-lg">0300-3456789</p>
+            <h6 class="lh-lg">Website</h6>
+            <p class="lh-lg">hppt://mcdonald's.uk/</p>
+          </div>
+          <div
+            class="col-12 col-md-4 col-lg-4 py-5 px-5 rounded-3  text-white bg-dark">
+            <div class="d-flex ">
+              <div>
+                <img src="img/resturant/Clock.png" alt>
+              </div>
+              <div>
+                <h3 class="text-white">Operational times</h3>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Monday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-3:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Tuseday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-3:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>wednesday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-3:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Thursday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-3:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Friday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-3:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Satarday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-3:00 AM</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Sunday:</h5>
+              </div>
+              <div>
+                <p> 8:00 AM-12:00 AM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-map">
+      <div class="container  my-5 map-img">
+        <div class="row">
+          <div
+              class="col-12 col-md-4 col-lg-4">
+              <div
+              class=" d-flex border shadow mt-5 py-3 bg-white rounded-3 position-absolute z-0  position-relative px-3">
+              <div>
+                <h6>Royal chese burger with extra fries</h6>
+                <p>1 Mcchiken, 1 Big Mac,1 Royal cheseburger, 3 medium </p>
+                <h6>GBP 23:10</h6>
+              </div>
+              <div>
+                <img src="img/menu/Rectangle 46 (9).png" class="w-100"
+                  alt=" pipce">
+                <img src="img/resturant/Rectangle 47.png"
+                  class="position-absolute  plus-bakend" alt>
+                <img src="img/menu/Plus.png" class="position-absolute plus-icon"
+                  alt>
+              </div>
+            </div>
+              <div class=" bg-dark text-white py-5 px-4 position-relative my-5 mx-5 rounded-4">
+                <h3>Mcdonald's</h3>
+                <h5 class="south">South London</h5>
+                <p>Tooly St,London Bridge, London SE1, 2TF,United kingdom</p>
+                <h5>Phone Number</h5>
+                <h5 class="south">+933443-45</h5>
+                <h5>Website</h5>
+                <p class="south">hppt/mcdonald's.uk/</p>
+              </div>
+              </div>
+           
+        </div>
+      </div>
+    </section>
+    <section class="sec-reviews position-relative bg-color-feast ">
+      <div class="container   py-4">
+        <div class="row">
+          <div class="d-flex">
+            <div>
+              <h2 class="pt-5">Customers Reviews</h2>
+            </div>
+            <div class="d-flex gap-2 ms-auto">
+              <div>
+               <img src="img/resturant/move-out.png" class="w-75 pt-5" alt="">
+              </div>
+              <div>
+                   <img src="img/resturant/Move-in.png" class="w-75 pt-5" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 ">
+            <div class="border shadow rounded-4 my-4 px-2 py-3">
+              <div class="d-flex gap-3 ">
+                <div>
+                  <img src="img/menu/Ellipse 3.png" class alt=" profile-imge">
+                </div>
+                <div>
+                  <h3>St Glx</h3>
+                  <h6 class="south ">South London</h6>
+                </div>
+                <div>
+                  <ul class="rating-stars list-unstyled d-flex ms-5 ps-2">
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                  </ul>
+                  <div class="d-flex ms-3">
+                    <div>
+                      <img src="img/resturant/Time Span.png" alt>
+                    </div>
+                    <div>
+                      <p>24th sept, 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="px-2">Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Veniam quasi, nulla neque natus, odit illo a
+                unde reiciendis nisi dolor, iure vero voluptatem debitis.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 ">
+            <div class="border shadow rounded-4  my-4 px-2 py-3">
+              <div class="d-flex gap-3 ">
+                <div>
+                  <img src="img/menu/Ellipse 3.png" class alt=" profile-imge">
+                </div>
+                <div>
+                  <h3>St Glx</h3>
+                  <h6 class="south ">South London</h6>
+                </div>
+                <div>
+                  <ul class="rating-stars list-unstyled d-flex ms-5 ps-2">
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                  </ul>
+                  <div class="d-flex ms-3">
+                    <div>
+                      <img src="img/resturant/Time Span.png" alt>
+                    </div>
+                    <div>
+                      <p>24th sept, 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="px-2">Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Veniam quasi, nulla neque natus, odit illo a
+                unde reiciendis nisi dolor, iure vero voluptatem debitis.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 ">
+            <div class="border shadow rounded-4  my-4 px-2 py-3">
+              <div class="d-flex gap-3 ">
+                <div>
+                  <img src="img/menu/Ellipse 3.png" class alt=" profile-imge">
+                </div>
+                <div>
+                  <h3>St Glx</h3>
+                  <h6 class="south ">South London</h6>
+                </div>
+                <div>
+                  <ul class="rating-stars list-unstyled d-flex ms-5 ps-2">
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-star"></i>
+                    </li>
+                  </ul>
+                  <div class="d-flex ms-3">
+                    <div>
+                      <img src="img/resturant/Time Span.png" alt>
+                    </div>
+                    <div>
+                      <p>24th sept, 2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="px-2">Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Veniam quasi, nulla neque natus, odit illo a
+                unde reiciendis nisi dolor, iure vero voluptatem debitis.</p>
+            </div>
+            <img src="img/menu/Rectangle 62.png"
+              class="img-reviews  position-absolute" alt>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-sim-restaurant">
+      <div class="container my-5">
+        <div class="row ">
+          <h3 class="mt-5">Simliar Restaurants</h3>
+          <div class="col-6 col-md-2 col-lg-2 mt-5 mb-5">
+            <div class="card">
+              <img src="img/Home.img/Rectangle 13( ).png" class="card-img-top"
+                alt="pizza">
+              <div class="card-body bg-warning text-white text-center">
+                <p class="card-text">Mcdonalds </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 col-lg-2 mt-5">
+            <div class="card">
+              <img src="img/Home.img/Rectangle 13 (1).png" class="card-img-top"
+                alt="pizza">
+              <div class="card-body bg-warning text-white text-center ">
+                <p class="card-text">Papa Johns</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 col-lg-2 mt-5">
+            <div class="card">
+              <img src="img/Home.img/Rectangle 13 (2).png" class="card-img-top"
+                alt="pizza">
+              <div class="card-body bg-warning text-white text-center">
+                <p class="card-text">KFC West London</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 col-lg-2 mt-5">
+            <div class="card">
+              <img src="img/Home.img/Rectangle 13 (3).png" class="card-img-top"
+                alt="pizza">
+              <div class="card-body bg-warning text-white text-center">
+                <p class="card-text">Texas Chicken</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 col-lg-2 mt-5">
+            <div class="card">
+              <img src="img/Home.img/Rectangle 13 (4).png" class="card-img-top"
+                alt="pizza">
+              <div class="card-body bg-warning text-white text-center">
+                <p class="card-text">Burger King</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 col-lg-2 mt-5">
+            <div class="card">
+              <img src="img/Home.img/Rectangle 13 (5).png" class="card-img-top"
+                alt="pizza">
+              <div class="card-body bg-warning text-white text-center">
+                <p class="card-text">Shaurma 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-inbox bg-color-feast">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-12 col-md-4 col-lg-4 my-5">
+            <img src="img/Home.img/LOGO 1.png" class="w-50" alt="log ">
+            <img src="img/Home.img/google-play-img.png" class="w-75" alt=" play">
+            <p>company #308945-6789, Register with our House of companies.</p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 my-5">
+            <h5>Get Exclusive in your inbox</h5>
+            <div class="border rounded-pill w-50 d-flex">
+              <input type="text" name="search" id="search"
+                class="position-relative bg-color-feast rounded-pill py-2 px-2 border-0 outline-remove "
+                placeholder="yourmail@gmail.com">
+              <button type="button"
+                class=" suscribe position-absolute bg-warning rounded-pill text-white py-2 px-4 border-0">Subscribe</button>
+            </div>
+            <p>we want spam,read <u>email police</u></p>
+            <ul class="d-flex gap-3 list-unstyled fs-5">
+              <li>
+                <i class="fa-brands fa-facebook"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-tiktok"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-snapchat"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 col-lg-2 my-5">
+            <h5>Legal Pages</h5>
+            <ul class="list-unstyled lh-lg text-dark">
+              <li>
+                <a href="#" class="text-dark"> Trems and conditons</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark"> Privacy</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark">Cookies</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark"> Mordern slavery statment</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 col-lg-2 my-5">
+            <h5>Important Links</h5>
+            <ul class="list-unstyled lh-lg text-dark">
+              <li>
+                <a href="#" class="text-dark"> GEt help</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark"> Add your restuarant</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark">sign up to deliver</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark"> create a business account</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-footer bg-dark text-white">
+      <nav class="navbar navbar-expand-lg ms-5 me-5">
+        <div class="container  ">
+          <p class="mt-3">Order.UK CopyRight 2024. All Rights Reserved</p>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-5 gap-5">
+              <li class="nav-item">
+                <a class="nav-link  text-white" href="#">privacy police</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Trems</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Do not sell and share my
+                  personal information</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+
+
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
